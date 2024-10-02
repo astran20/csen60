@@ -29,7 +29,7 @@ Chosen webpage: [https://www.w3schools.com/html/html_blocks.asp]
 ```
 
 ```
-<ul?></ul>
+<ul></ul>
 ```
 ### 1b
 
