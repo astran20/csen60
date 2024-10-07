@@ -1,0 +1,22 @@
+
+/* The old way of doing horizontal layout */
+/*
+li {
+    display: inline;
+}
+ */
+
+
+ /* The modern way of doing horizontal layout */
+
+ul {
+    display: flex;
+    flex-direction: row; /* by default, display: flex has flex-direction: row */
+    list-style-type: none;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+}
