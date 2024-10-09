@@ -9,6 +9,23 @@ li {
 
  /* The modern way of doing horizontal layout */
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ---- This did not work ---
+body nav, footer{
+    flex-shrink: 1;
+}
+
+body main{
+    flex-grow: 2;
+}
+
+*/
+
 ul {
     display: flex;
     flex-direction: row; /* by default, display: flex has flex-direction: row */
@@ -35,4 +52,11 @@ button {
     gap: 1rem;
     align-items: center;
     
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
