@@ -20,22 +20,23 @@ body {
 */
 
 ul.tags {
-  display: ;
-  list-style: ;
+  display: flex;
+  list-style: none;
 
-  margin-top: ;
-  margin-bottom: ;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
-  padding-left: ;
+  padding-left: 0rem;
+  gap: 10px;
 }
 
 ul.tags li {
-  border-radius: ;
-  background-color: ;
+  border-radius: 0.25rem;
+  background-color: #eee;
   /* background color should be --gray */
-  padding: ;
-  margin-left: ;
-  margin-right: ;
+  padding: 4px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 ul.tags a {
@@ -47,12 +48,19 @@ ul.tags a {
 */
 nav {
   /* background color should be accent-background */
+  text-align: end;
+  background-color: #54a0ff;
+  padding: .1rem;
 }
 
 nav ul {
   /* something should go here */
+  list-style: none;
+  padding-right: 1rem;
 }
 
 nav ul a {
   /* color should be accent-background-text */
+  color: #073164;
+  text-decoration: none;
 }

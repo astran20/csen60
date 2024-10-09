@@ -1,15 +1,36 @@
 header {
   /* think about which properties you'd want to use to make the header */
   /* border-bottom color should be accent-background */
+
+  padding: 3rem 1rem 1rem;
+  border-bottom: 2px solid;
+  border-bottom-color: #54a0ff;
+  text-align: end;
 }
 
 input[type="search"] {
-  border-radius: ;
-  background-color: ;
-  border: ;
-  padding: ;
+  border-radius: 0.25rem;
+  background-color: none;
+  border: solid #ccc;
+  padding: .5rem;
 }
 
 article h1 a {
   /*color should be accent-background */
+  color: #54a0ff;
+  display: flex;
+  text-decoration: none;
+}
+
+main{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article{
+  text-wrap: wrap;
+  max-width: 25rem;
 }
