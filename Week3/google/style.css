@@ -12,20 +12,18 @@ li {
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-/* ---- This did not work ---
-body nav, footer{
-    flex-shrink: 1;
+/*
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
-
-body main{
-    flex-grow: 2;
-}
-
-*/
-
+    */
 ul {
     display: flex;
     flex-direction: row; /* by default, display: flex has flex-direction: row */
