@@ -9,7 +9,7 @@ li {
 
  /* The modern way of doing horizontal layout */
 
-body{
+ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
