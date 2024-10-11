@@ -10,10 +10,7 @@ li {
  /* The modern way of doing horizontal layout */
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    
 }
 
 
