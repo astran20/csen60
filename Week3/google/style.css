@@ -9,8 +9,9 @@ li {
 
  /* The modern way of doing horizontal layout */
 
-body{
-    
+footer{
+    position: absolute;
+    bottom: 0;
 }
 
 
