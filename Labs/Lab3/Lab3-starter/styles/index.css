@@ -6,15 +6,38 @@ body{
 
 aside{
     max-height: 100vh;
-    max-width: 35vw;
+    width: 35vw;
     background-color: var(--accent-background);
 }
 
 figure{
-    background-color: var(--accent-background);
-    margin: 0px;
     display: flex;
     flex-direction: column;
+    max-width: 35vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+figcaption ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 13rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+figcaption h1{
+    font-size: 2.5em;
+    color: var(--accent-background-text);
 }
 
 .profile{
@@ -26,4 +49,49 @@ figure{
 .logo{
     width: 2rem;
     height: 2rem;
+}
+
+article{
+    max-width: 50vw;
+    margin-left: 7rem;
+    margin-top: 20vh;
+}
+
+article header{
+    display: flex;
+    flex-direction: column;
+}
+
+article header h1{
+    font-size: 2.5em;
+    color: var(--accent-background-text);
+    margin: 0;
+}
+
+article header time{
+    color: var(--darkest-gray);
+    margin: 0;
+}
+
+nav{
+    background-color: #FFF !important;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 30vw;
+    align-items: end;
+    margin-left: 34vw;
+    text-wrap: nowrap;
+}
+
+.secondary{
+    color: var(--darkest-gray);
+}
+
+.primary{
+    color: var(--accent-background);
 }

@@ -24,7 +24,7 @@ article{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    width: 40rem;
+    width: 45rem;
     overflow: hidden;
 }
 
@@ -72,3 +72,15 @@ footer nav a{
     background-color: var(--accent-background);
 }
 
+header h1{
+    color: var(--accent-background-text);
+}
+
+.img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+footer{
+    margin-top: 2vh;
+}
