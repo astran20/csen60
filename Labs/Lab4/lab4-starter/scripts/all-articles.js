@@ -45,6 +45,13 @@ function hideArticles() {
    * else, remove "hidden" from that article's classList
    */
   // write your code here
+  for (const tag of document.querySelectorAll("article")) {
+    if(tag == article){
+      article.classListremove("hidden");
+    } else{
+      article.classList.push("hidden");
+    }
+  }
 }
 
 /**
@@ -59,6 +66,9 @@ function createTag(text) {
    * set the button's textContent property to text (the passed in argument)
    */
   // write your code here
+  document.createElement("button");
+  button.classList.push("tag");
+  button.textContent(text);
 
   function remove() {
     button.remove();
