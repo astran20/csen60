@@ -6,7 +6,9 @@ let parentElement = null;
 const tagLists = Array.from(document.querySelectorAll("article .tags"));
 
 // Search Functions
-
+/**Initialize Search is the URL functionality, which filters the articles by typing in the url rather than the search bar.
+ * It does this by using URLSearchParams to iterate through the URL to find a tag if you type it in
+  */
 function initializeSearch(newParentElement) {
   const params = new URLSearchParams(window.location.search);
   if (newParentElement === null) {
@@ -23,7 +25,11 @@ function initializeSearch(newParentElement) {
   }
 }
 
-
+/**
+ * This function isolates the articles with the searched tag by making an array
+ * articlesWithTags and adding any article with that searched tag into it. It then hides
+ * the other articles that do not have the searched tag.
+ */
 function hideArticles() {
   if (searchTags.length === 0) {
     for (const article of document.querySelectorAll("article")) {
@@ -46,10 +52,10 @@ function hideArticles() {
    */
   // write your code here
   for (const tag of document.querySelectorAll("article")) {
-    if(tag == article){
-      article.classListremove("hidden");
+    if(articlesWithTags.includes(tag)){
+      tag.classList.remove("hidden");
     } else{
-      article.classList.push("hidden");
+      tag.classList.add("hidden");
     }
   }
 }
@@ -66,10 +72,13 @@ function createTag(text) {
    * set the button's textContent property to text (the passed in argument)
    */
   // write your code here
-  document.createElement("button");
-  button.classList.push("tag");
-  button.textContent(text);
+  const button = document.createElement("button");
+  button.classList.add("tag");
+  button.textContent = text;
 
+  /**
+   * This function is in charge of removing the generated button after searching by using button.remove()
+   */
   function remove() {
     button.remove();
     const index = searchTags.indexOf(text);
@@ -85,8 +94,15 @@ function createTag(text) {
    * return the button element 
    */
   // write your code here
+  button.addEventListener("click", remove);
+  return button;
+
 }
 
+/**
+ * This function takes the searched phrase and finds which articles have that phrase and adds it to 
+ * the articles array, then returning the array articles. 
+ */
 function findArticlesWithTag(phrase) {
   const articles = [];
   const sanitizedPhrase = phrase.toLowerCase().trim();
@@ -103,7 +119,11 @@ function findArticlesWithTag(phrase) {
   return articles;
 }
 
-
+/**
+ * This function allows for multiple searches by adding the searched terms to
+ * searchTags array. It then calls hideArticles function to hide all other articles
+ * that do not have the searched terms
+ */
 function addSearchTerm(text) {
   parentElement.appendChild(createTag(text));
   searchTags.push(text);
@@ -111,7 +131,11 @@ function addSearchTerm(text) {
 }
 
 // Handlers
-
+/**
+ * This function triggers if the event is pressing the enter key. It triggers the
+ * function addSearchTerm with the current input (what's in the searchbox), to search
+ * for the terms that are inputted
+ */
 function onSearch(event) {
   const input = event.currentTarget;
   /**
@@ -120,10 +144,17 @@ function onSearch(event) {
    * set input value to an empty string
    */
   // write your code here
+  if(event.key === "Enter"){
+    addSearchTerm(input.value);
+    input.value="";
+  }
 }
 
 // Main function
-
+/**
+ * This function triggers the initializeSearch on load, so if there is a searched
+ * term in the url, articles with that term will show on load. 
+ */
 function main() {
   initializeSearch(document.querySelector("#searched-tags"));
 
@@ -136,8 +167,8 @@ function main() {
 main();
 
 /**
- * Order of execution for each event:
- * Pressing Enter: 
- * Clicking to Remove a Tag: 
- * Loading the Page: 
+ * Order of execution for each event: Loading the Page -> Pressing Enter -> Clicking to Remove a Tag
+ * Pressing Enter: 2
+ * Clicking to Remove a Tag: 3
+ * Loading the Page: 1
  */
