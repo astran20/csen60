@@ -36,3 +36,15 @@
     - data is encrypted
     - browser and server agree on key
     - handled by Secure Sockets Layer (SSL)
+
+- Secure Socket Later
+  - protocol that allows data to be privately exchanged over public netwroks
+  - developed by Netscape
+  - uses both symmetric and asymmetric encryption
+
+
+- digital certificate
+  - for  of asymmetric key
+  - confirms that website is correct
+
+  
