@@ -31,3 +31,33 @@ Netflix:
 - scroll position / use 6 images for scrolling carousel
 
 
+Nike:
+
+- Used Tailwind / React / NextJs
+
+- used Neon Database / Vercel server
+
+- web tech is evolving -- full-stack applications are getting easier to make
+
+
+Reddit:
+
+- dropdown menu / carousel / comments
+
+- used api 
+
+
+Smolarski:
+
+- Instead of remake, improved site
+
+- Popups / Advanced Accordion / search feature
+
+- Nielson Heuristics
+
+- used figma to redesign 
+
+- made with accessibility / practicality in mind -- reduced motion works / compatible with dark reader
+
+- search feature goes to the accordion with the search term highlighted
+
