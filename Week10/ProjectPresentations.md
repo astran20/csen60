@@ -61,3 +61,27 @@ Smolarski:
 
 - search feature goes to the accordion with the search term highlighted
 
+
+
+Bluey:
+
+- Drop-down / hover zoom on images / carousel / playable audio clip / quiz
+
+- used Base.css / base.html
+
+- upgraded original website by making carousel scrollable
+
+- quiz gives score of how many correct
+
+
+
+Pinterest:
+
+- saves pins using cookies
+
+- updated original layout
+
+- save button works, but does not indicate whether or not saved button was clicked
+
+- focused on main functionalities instead of other detailed functions for time
+
